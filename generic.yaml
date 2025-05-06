@@ -1,0 +1,31 @@
+# This is a comment
+application:
+  name: "My Application"
+  version: "1.0.0"
+
+database:
+  type: "PostgreSQL"
+  host: "localhost"
+  port: 5432
+  username: "admin"
+  password: "password123"
+
+server:
+  host: "0.0.0.0"
+  port: 8080
+
+features:
+  authentication: true
+  logging:
+    enabled: true
+    level: "INFO"
+  metrics: false
+
+users:
+  - id: 1
+    name: "John Doe"
+    email: "john.doe@example.com"
+  - id: 2
+    name: "Jane Smith"
+    email: "jane.smith@example.com"
+
