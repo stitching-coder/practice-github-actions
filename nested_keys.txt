@@ -1,0 +1,14 @@
+application.name
+application.version
+database.type
+database.host
+database.port
+database.username
+database.password
+server.host
+server.port
+features.authentication
+features.logging.enabled
+features.logging.level
+features.metrics
+users
