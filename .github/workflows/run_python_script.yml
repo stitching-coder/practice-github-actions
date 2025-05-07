@@ -32,8 +32,7 @@ jobs:
       - name: Run Python script
         run: |
           python script_for_github_action.py
-          git config user.email stitching.coder@gmail.com
-          git config user.name Laney
-          git add .
-          git commit -m "Update from GitHub Action"
+          git config --local user.email "stitching.coder@gmail.com"
+          git config --local user.name "Laney"
+          git commit -a -m "Update from GitHub Action"
           git push
