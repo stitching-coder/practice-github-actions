@@ -32,3 +32,6 @@ jobs:
       - name: Run Python script
         run: |
           python script_for_github_action.py
+          git add .
+          git commit -m "Update from GitHub Action"
+          git push
