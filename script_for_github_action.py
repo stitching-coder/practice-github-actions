@@ -31,5 +31,9 @@ def get_nested_keys(file_path):
     extract_keys(data)
     return nested_keys
 
+
 nest_keys = get_nested_keys(file_path="generic.yaml")
-print(nest_keys)
+
+# Write the nested keys to a text file
+with open("nested_keys.txt", "w") as file:
+    file.writelines(key + "\n" for key in nest_keys)
